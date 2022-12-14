@@ -166,12 +166,11 @@ header{
 
 .hero{
     text-align: center;
-    background-color: var(--dark-color);
     padding: 192px;
 }
 
 .overlay{
-    height: 600px;
+    
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -366,16 +365,15 @@ padding-right: 12px;
 
 .team-social{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     
     padding: 0;
-    margin-top: 8px;
-    margin-right:16px;
-    margin-left: 16px;
+    margin-top: 12px;
+    gap: 16px;
 }
 
 .element-social{
-    
+    display: block;
     
     height: 40px;
     width: 40px;
@@ -394,8 +392,7 @@ padding-right: 12px;
 /* Customers */
 
 .customer{
-    margin-left: auto;
-    margin-right: auto;
+    
     
     text-align: center;
     font-weight: 700;
@@ -427,7 +424,8 @@ padding-right: 12px;
     padding:16px 32px;
 }
 
-.link-svg:hover{
+.link-svg:hover,    
+.link-svg:focus{
     fill:var(--prbrand-color); 
     border: 1px solid var(--prbrand-color);
 }
@@ -475,13 +473,15 @@ footer{
 }
 
 .footer-element-social{
+    display: block;
     height: 40px;
     width: 40px;
     background-color: var(--text-color);
     border-radius: 50%;   
 }
 
-.footer-element-social:hover{
+.footer-element-social:hover,
+.footer-element-social:focus{
     background-color:#31D0AA;
 }
 
@@ -564,12 +564,17 @@ footer{
     text-transform:capitalize;
     color:var(--dark-color);     
 }
-.sample{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .list-potfolio{
+    display: block;
     text-decoration: none;
     color: var(--text-color) ;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.list-potfolio:hover,
+.list-potfolio:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .sample-element{
